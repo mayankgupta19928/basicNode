@@ -1,6 +1,6 @@
 const http = require("http");
 const fs = require("fs");
-import { routeHandler } from "./route.js";
-const server = http.createServer(routeHandler);
+import { handler } from "./route.js";
+const server = http.createServer(handler);
 
 server.listen(3000);

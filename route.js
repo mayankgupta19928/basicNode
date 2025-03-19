@@ -1,4 +1,4 @@
-const handler = rountHandler((req, res) => {
+export const handler = rountHandler((req, res) => {
   const url = req.url;
   const method = req.method;
   if (url === "/") {
@@ -33,4 +33,3 @@ const handler = rountHandler((req, res) => {
   res.write("</html>");
   res.end();
 });
-exports.handler = routeHandler;
