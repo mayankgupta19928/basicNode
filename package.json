@@ -1,17 +1,19 @@
 {
   "name": "node",
   "version": "1.0.0",
-  "main": "./src/project1.ts",
+  "main": "./src/main.ts",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/project1.ts",
-    "start": "nodemon src/project1.ts"
+    "dev": "nodemon --exec ts-node src/main.ts",
+    "start": "nodemon src/main.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
     "mongoose": "^8.12.1",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1",
+    "uid": "^2.0.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
