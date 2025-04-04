@@ -1,6 +1,7 @@
 import { set } from "mongoose";
+import { UserDocument } from "../modal/user";
 
-type MapType = number | string | object;
+export type MapType = number | string | object | UserDocument | null;
 const sessionIdUserMap = new Map<MapType, MapType>();
 export const getSessionId = <type>(id: number, user: type) => {
   const sessionId = sessionIdUserMap.get(id);

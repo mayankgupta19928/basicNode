@@ -5,7 +5,7 @@ interface User {
   last_name: string;
   email: string;
   gender: string;
-  password: string;
+  password: string | null; // incrypt password store
 }
 interface UserResponse {
   first_name: string;
@@ -23,7 +23,7 @@ const userSchema: Schema<UserDocument> = new mongoose.Schema(
     last_name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     gender: { type: String },
-    password: { type: String, required: true },
+    password: { type: String, required: true }, // incrypt password store
   },
   { timestamps: true }
 );
